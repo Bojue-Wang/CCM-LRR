@@ -1,0 +1,18 @@
+2023-01-02-14:45:00
+
+data_dir: ../../data
+arch: vgg_16_bn_spa
+lr_type: cos
+result_dir: train_from_raw_vgg_16_bn_cifar_with_ccm_rl_0.01_lambda_0.01_the_best/pruned_result/CCM_finetune_VGG_16_threshold_0.7
+batch_size: 256
+epochs: 600
+label_smooth: 0
+learning_rate: 0.01
+lr_decay_step: 50,100
+momentum: 0.9
+weight_decay: 0.005
+pretrain_dir: train_from_raw_vgg_16_bn_cifar_with_ccm_rl_0.01_lambda_0.01_the_best/checkpoint.pth.tar
+ci_dir: train_from_raw_vgg_16_bn_cifar_with_ccm_rl_0.01_lambda_0.01_the_best/CI_vgg_16_bn
+gpu: 0
+threshold: 0.7
+

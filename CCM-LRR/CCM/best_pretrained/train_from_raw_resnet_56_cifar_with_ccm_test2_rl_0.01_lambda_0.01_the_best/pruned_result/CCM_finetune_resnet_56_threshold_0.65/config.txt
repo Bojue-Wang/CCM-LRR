@@ -1,0 +1,18 @@
+2022-12-28-17:43:21
+
+data_dir: ../../data
+arch: resnet_56_spa
+lr_type: cos
+result_dir: train_from_raw_resnet_56_cifar_with_ccm_test2_rl_0.01_lambda_0.01_the_best/pruned_result/CCM_finetune_resnet_56_threshold_0.65
+batch_size: 256
+epochs: 600
+label_smooth: 0
+learning_rate: 0.01
+lr_decay_step: 50,100
+momentum: 0.9
+weight_decay: 0.005
+pretrain_dir: train_from_raw_resnet_56_cifar_with_ccm_test2_rl_0.01_lambda_0.01_the_best/checkpoint.pth.tar
+ci_dir: train_from_raw_resnet_56_cifar_with_ccm_test2_rl_0.01_lambda_0.01_the_best/CI_resnet_56
+gpu: 0
+threshold: 0.65
+
